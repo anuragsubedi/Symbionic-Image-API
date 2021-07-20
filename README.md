@@ -27,3 +27,9 @@ This is what it looks like when we try to add a Image instance into the category
 ![Screen Shot 2021-07-20 at 8 18 02 PM](https://user-images.githubusercontent.com/43778235/126341204-4094c57f-b47b-44f1-adfe-8010e7910fbb.png)
 
 #### Note: You can also perform POST requests from these endpoints to alter the table
+
+
+### 3. The same GET and POST requests can also be made from a different client (Using Postman in this case)
+#### In this case, instead of returning a HTML response, the API returns a relevant JSON object
+![Screen Shot 2021-07-20 at 8 24 04 PM](https://user-images.githubusercontent.com/43778235/126342259-72d5c502-2e54-4196-933e-24c3dad32805.png)
+
