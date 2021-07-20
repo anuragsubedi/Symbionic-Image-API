@@ -5,12 +5,12 @@ The main idea of this API is to fetch the image instance from the image table (U
 
 
 ## How to run:
-1. Clone the repository into the local storage and change directory into the main directory containing the requirements.txt and manage.py files. (The name of the directory is "backend_image_api")
-2. Install all the requirements:  pip install -r requirements.txt
-3. You can either log in as the default admin (Username/Password = admin) or create a new superuser by running: python manage.py createsuperuser
+1. Clone the repository into the local storage and change directory into the main directory containing the requirements.txt and manage.py files. (The name of the directory is "<strong>backend_image_api</strong>")
+2. Install all the requirements: <strong> pip install -r requirements.txt </strong>
+3. You can either log in as the default admin (Username/Password = admin) or create a new superuser by running: <strong> python manage.py createsuperuser </strong>
 4. Once you are logged in into the admin interface, you can make changes the database and the tables if needed.
-5. You can go to 127.0.0.1:8000/images to get the json response of the image model/table
-6. You can open a specific image instance by giving the "id" attribute of the image in the url like: 127.0.0.1:8000/images/5 . You can open the image by clicking the image url specified in the "image" attribute of the json object.
+5. You can go to <strong> 127.0.0.1:8000/images </strong> to get the json response of the image model/table
+6. You can open a specific image instance by giving the "id" attribute of the image in the url like: <strong> 127.0.0.1:8000/images/5 </strong>. You can open the image by clicking the image url specified in the "image" attribute of the json object.
 
 
 ## The following are the options available:
