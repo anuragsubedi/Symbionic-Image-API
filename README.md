@@ -4,6 +4,15 @@ This is a REST api created using django and django rest framework.
 The main idea of this API is to fetch the image instance from the image table (Using GET). <strong>The fetched image is modified using pillow to insert a watermark named "Symbionic Image API".  </strong>
 
 
+## How to run:
+1. Clone the repository into the local storage and change directory into the main directory containing the requirements.txt and manage.py files. (The name of the directory is "backend_image_api")
+2. Install all the requirements:  pip install -r requirements.txt
+3. You can either log in as the default admin (Username/Password = admin) or create a new superuser by running: python manage.py createsuperuser
+4. Once you are logged in into the admin interface, you can make changes the database and the tables if needed.
+5. You can go to 127.0.0.1:8000/images to get the json response of the image model/table
+6. You can open a specific image instance by giving the "id" attribute of the image in the url like: 127.0.0.1:8000/images/5 . You can open the image by clicking the image url specified in the "image" attribute of the json object.
+
+
 ## The following are the options available:
 ### 1. The user can log in as an authenticated user and then either create a category or add an Image instance to a pre-existing category.
 
