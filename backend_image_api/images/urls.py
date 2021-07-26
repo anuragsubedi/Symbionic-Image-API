@@ -2,8 +2,13 @@
 from django.urls import path, include
 
 from .views import ImageModelView
+from .views import AllImagesView
 
 from rest_framework import routers 
+
+from django.views.generic import TemplateView
+
+app_name = 'images' # Specify the appname as mentioned in the namespace
 
 # The routers will generate all the respective url for each object/list of all objects:
 # For instance, if you perform a GET request from the url myurl.com/images, you expect 
@@ -36,6 +41,13 @@ router.register('images', ImageModelView)
 # when you are requesting/posting using a browser. 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)), # This url will deal with all the api related views
+
+    # However, we also need a seperate view for the HTML front end, for that, again instead of 
+    # defining explicit view method, we are going to use django template view to directly render
+    # the HTML file.  Note: import django.views.generic.TemplateView for this
+    path('home/', TemplateView.as_view(template_name='images/index.html')),
+
+    path('all/', AllImagesView, name='all'),
 ]    
 
