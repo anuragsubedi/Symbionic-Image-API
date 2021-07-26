@@ -43,3 +43,16 @@ This is what it looks like when we try to add a Image instance into the category
 #### In this case, instead of returning a HTML response, the API returns a relevant JSON object
 ![Screen Shot 2021-07-20 at 8 24 04 PM](https://user-images.githubusercontent.com/43778235/126342259-72d5c502-2e54-4196-933e-24c3dad32805.png)
 
+### 4. You can also visit the HTML front-end page that fetches all the images using the API and displays them
+<strong> http://127.0.0.1:8000/all/ </strong>
+
+## So, to summarize;
+#### After you've run the server:
+http://127.0.0.1:8000/admin/  - admin portal, log in to this portal to view the database and delete entries. However,  you need not need to log in as admin to perform a GET request
+http://127.0.0.1:8000  -  API root
+http://127.0.0.1:8000/images/ - GET request. Returns a json response of all the images. 
+http://127.0.0.1:8000/images/1/  GET request. Returns a single image 
+http://127.0.0.1:8000/all/  - HTML homepage that renders all the images by calling the API
+
+
+
