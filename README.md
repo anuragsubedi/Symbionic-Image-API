@@ -48,11 +48,11 @@ This is what it looks like when we try to add a Image instance into the category
 
 ## So, to summarize;
 #### After you've run the server:
-http://127.0.0.1:8000/admin/  - admin portal, log in to this portal to view the database and delete entries. However,  you need not need to log in as admin to perform a GET request
-http://127.0.0.1:8000  -  API root
-http://127.0.0.1:8000/images/ - GET request. Returns a json response of all the images. 
-http://127.0.0.1:8000/images/1/  GET request. Returns a single image 
-http://127.0.0.1:8000/all/  - HTML homepage that renders all the images by calling the API
+http://127.0.0.1:8000/admin/  - admin portal, log in to this portal to view the database and delete entries. However,  you need not need to log in as admin to perform a GET request </br>
+http://127.0.0.1:8000  -  API root </br>
+http://127.0.0.1:8000/images/ - GET request. Returns a json response of all the images. </br>
+http://127.0.0.1:8000/images/1/  GET request. Returns a single image </br>
+http://127.0.0.1:8000/all/  - HTML homepage that renders all the images by calling the API</br>
 
 
 
