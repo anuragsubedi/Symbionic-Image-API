@@ -18,10 +18,7 @@ def write_symbionic(image):
     thumb_io = BytesIO() # create a BytesIO object
     draw = ImageDraw.Draw(im)
     
-    textsize = 52
-    ft = ImageFont.truetype("/Users/anuragsubedi/Library/Fonts/Lato-Heavy.ttf", textsize)
-
-    draw.text((20, 150), 'Symbionic image API', fill='green', font=ft)
+    draw.text((20, 150), 'Symbionic image API', fill='green')
     im.save(thumb_io, 'JPEG', quality=85) # save image to BytesIO object
     edited_image = File(thumb_io, name=image.name) # create a django friendly File object
     return edited_image
